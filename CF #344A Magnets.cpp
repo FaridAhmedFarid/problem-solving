@@ -17,14 +17,7 @@ int main()
 
     for(i = 1; i < n; i++)
     {
-        if(magnets[i-1] == "10" && magnets[i] == "01")
-        {
-            groups++;
-            ctr = 0;
-        }
-        if(magnets[i-1] == "10" && magnets[i] == "10") ctr++;
-        if(magnets[i-1] == "01" && magnets[i] == "01") ctr++;;
-        if(magnets[i-1] == "01" && magnets[i] == "10")
+        if(magnets[i-1]!= magnets[i])
         {
             groups++;
             ctr = 0;
